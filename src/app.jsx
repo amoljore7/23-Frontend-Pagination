@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { async } from 'q';
+import { Posts } from './components/posts';
 
 const App = ()=> {
   const [posts, setPosts] = useState([]);
@@ -18,11 +18,11 @@ const App = ()=> {
 
     fetchPosts();
   }, []);
-
-
+  
     return (
-      <React.Fragment>
-        Hello
+      <React.Fragment className="container mt-5">
+        <h1 className="text-primary mb-3">My Blog</h1>
+        <Posts posts={posts} loading={loading} />
       </React.Fragment>
     );
 }
