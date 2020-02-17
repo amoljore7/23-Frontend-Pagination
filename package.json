@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://amoljore7.github.io/23-Frontend-Pagination/",
   "dependencies": {
+    "axios": "^0.19.2",
     "gh-pages": "^2.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
